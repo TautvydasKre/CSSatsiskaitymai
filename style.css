@@ -31,19 +31,15 @@ h2 {
   margin-bottom: 5%;
   text-align: center;
 }
-/* .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-.wrapper > * {
-  flex: 1 100%;
-} */
 /*Base style PABAIGA */
 /*Navigation content style*/
 .logo {
   display: flex;
   align-items: center;
+}
+.navIMG-size {
+  height: 40px;
+  width: 50px;
 }
 .navigation {
   display: flex;
@@ -60,12 +56,21 @@ h2 {
 .navSelect {
   margin-right: 20px;
 }
+@media (max-width: 1280px) {
+  .navSelect {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .navSelect a {
+    margin: 10px 0;
+  }
+}
 /*Navigation content style PABAIGA*/
 /*Header style */
 .fonas {
-  content: "";
   position: absolute;
-  margin: 350px 500px;
   background: #fff;
   width: 50%;
   height: 350px;
@@ -75,10 +80,13 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .headerIMG {
   content: "";
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
   background-image: url(Fotos/13143_0c878e5c901bfb2e7e55dd661599a28c.jpg);
@@ -91,8 +99,7 @@ h2 {
   left: 0;
   right: 0;
   z-index: -2;
-  border-bottom: 5px solid #92bf8f;
-  align-items: center;
+  border-bottom: 15px solid #599656;
 }
 /*Header style PABAIGA */
 /*Main content style GYDOMIEJI AUGALAI*/
@@ -100,65 +107,29 @@ h2 {
   font-weight: bold;
   margin-top: 5%;
 }
+.gydContainer-border {
+  border-bottom: 15px solid #599656;
+}
 .gydContainer {
   display: flex;
   gap: 100px;
   padding-bottom: 75px;
-  border-bottom: 5px solid #92bf8f;
-}
-.gydContainer1 {
+  margin-top: 5%;
   margin-left: 4%;
   margin-right: 7%;
-  width: 50%;
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
+.gydContainer1,
 .gydContainer2 {
-  margin-left: 4%;
-  margin-right: 7%;
-  width: 50%;
-  margin-top: 5%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.gyd1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.gyd2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.gyd3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.gyd4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.gyd5 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+.gyd1,
+.gyd2,
+.gyd3,
+.gyd4,
+.gyd5,
 .gyd6 {
   display: flex;
   flex-direction: row;
@@ -166,41 +137,11 @@ h2 {
   align-items: center;
   text-align: center;
 }
-.gydo1 {
-  width: 200px;
-  height: 150px;
-  border-radius: 25%;
-  border-top: 5px solid #92bf8f;
-  border-bottom: 5px solid #92bf8f;
-}
-.gydo2 {
-  width: 200px;
-  height: 150px;
-  border-radius: 25%;
-  border-top: 5px solid #92bf8f;
-  border-bottom: 5px solid #92bf8f;
-}
-.gydo3 {
-  width: 200px;
-  height: 150px;
-  border-radius: 25%;
-  border-top: 5px solid #92bf8f;
-  border-bottom: 5px solid #92bf8f;
-}
-.gydo4 {
-  width: 200px;
-  height: 150px;
-  border-radius: 25%;
-  border-top: 5px solid #92bf8f;
-  border-bottom: 5px solid #92bf8f;
-}
-.gydo5 {
-  width: 200px;
-  height: 150px;
-  border-radius: 25%;
-  border-top: 5px solid #92bf8f;
-  border-bottom: 5px solid #92bf8f;
-}
+.gydo1,
+.gydo2,
+.gydo3,
+.gydo4,
+.gydo5,
 .gydo6 {
   width: 200px;
   height: 150px;
@@ -208,68 +149,35 @@ h2 {
   border-top: 5px solid #92bf8f;
   border-bottom: 5px solid #92bf8f;
 }
+@media (max-width: 1280px) {
+  .gydContainer {
+    flex-direction: column;
+  }
+}
 /*Main content style GYDOMIEJI AUGALAI PABAIGA*/
 /*Main content style NYKSTANTIS AUGALAI*/
+.nykContainer-border {
+  border-bottom: 15px solid #599656;
+}
 .nykContainer {
   width: 100%;
-  border-bottom: 5px solid #92bf8f;
   padding-bottom: 75px;
   margin-top: 5%;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.nykContainer1 {
-  margin-left: 4%;
-  margin-right: 7%;
-  margin-top: 5%;
-  display: flex;
-  flex-direction: row;
-  gap: 1%;
-}
+.nykContainer1,
 .nykContainer2 {
-  margin-left: 4%;
-  margin-right: 7%;
-  margin-top: 5%;
   display: flex;
   flex-direction: row;
   gap: 1%;
 }
-.nyk1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.nyk2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.nyk3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.nyk4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.nyk5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+.nyk1,
+.nyk2,
+.nyk3,
+.nyk4,
+.nyk5,
 .nyk6 {
   display: flex;
   flex-direction: column;
@@ -277,41 +185,11 @@ h2 {
   align-items: center;
   text-align: center;
 }
-.nyksta1 {
-  width: 200px;
-  height: 150px;
-  border-radius: 25%;
-  border-top: 5px solid #92bf8f;
-  border-bottom: 5px solid #92bf8f;
-}
-.nyksta2 {
-  width: 200px;
-  height: 150px;
-  border-radius: 25%;
-  border-top: 5px solid #92bf8f;
-  border-bottom: 5px solid #92bf8f;
-}
-.nyksta3 {
-  width: 200px;
-  height: 150px;
-  border-radius: 25%;
-  border-top: 5px solid #92bf8f;
-  border-bottom: 5px solid #92bf8f;
-}
-.nyksta4 {
-  width: 200px;
-  height: 150px;
-  border-radius: 25%;
-  border-top: 5px solid #92bf8f;
-  border-bottom: 5px solid #92bf8f;
-}
-.nyksta5 {
-  width: 200px;
-  height: 150px;
-  border-radius: 25%;
-  border-top: 5px solid #92bf8f;
-  border-bottom: 5px solid #92bf8f;
-}
+.nyksta1,
+.nyksta2,
+.nyksta3,
+.nyksta4,
+.nyksta5,
 .nyksta6 {
   width: 200px;
   height: 150px;
@@ -319,17 +197,18 @@ h2 {
   border-top: 5px solid #92bf8f;
   border-bottom: 5px solid #92bf8f;
 }
+@media (max-width: 1280px) {
+  .nykContainer1,
+  .nykContainer2 {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
 /*Main content style NYKSTANTIS AUGALAI PABAIGA*/
 /*Main content style MISKU NAUDA*/
-.antrasStulp {
-  margin-left: 3%;
-}
-.treciasStulp {
-  margin-left: 3%;
-}
 .miskuContainer {
   padding-bottom: 100px;
-  border-bottom: 5px solid #92bf8f;
+  border-bottom: 15px solid #599656;
 }
 .miskuFoto {
   width: 100%;
@@ -345,8 +224,23 @@ h2 {
   margin-right: 7%;
   text-align: center;
 }
-.pirmasStulp {
-  margin-left: 3%;
+.pirmasStulp,
+.antrasStulp,
+.treciasStulp {
+  width: 100%;
+  margin-left: 0;
+}
+@media (max-width: 1280px) {
+  .miskoTxt {
+    display: block;
+  }
+  .pirmasStulp,
+  .antrasStulp,
+  .treciasStulp {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 /*Main content style MISKU NAUDA PABAIGA*/
 /*Footer content style*/
@@ -391,5 +285,16 @@ form button {
 }
 form button:hover {
   color: red;
+}
+@media (max-width: 1280px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer div {
+    margin: 10px 0;
+  }
+  form input {
+    width: 100%;
+  }
 }
 /*Footer content style PABAIGA*/
